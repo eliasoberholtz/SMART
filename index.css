@@ -1,0 +1,18 @@
+/* SETUP */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* COLOURS */
+    --surface_dark: #171717;
+    --surface_dark_variant: #1F1F1F;
+
+    /* FONTS */
+    --header_font: 'Noto Serif';
+    --body_font: 'Noto Sans'
+}
+
+/* WE WANT TO MAKE OUR APP FOR PHONES FIRST */
+@media (width <= 520px) {
+    /*Begin working here*/
+}
