@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>SMART | Books</title>
+        <title>SMART | Book Collection</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./res/index.css">
     </head>
     <body>
         <header>
             <!--Header-->
-            <!--
-                If we're on a small screen, we do NOT show the navigation bar but we do
-                on a large device like a computer.
-            -->
+            <h1>Book Collection</h1>
+            <nav id="top-nav">
+                <a href="./index.html">Home</a>
+                <a href="./collection.html">Book Collection</a>
+            </nav>
         </header>
 
         <main>
@@ -21,6 +22,20 @@
 
         <footer>
             <!--Footer-->
+            <nav id="bottom-nav">
+                <div id="home-bottom" class="bottom-nav-container">
+                    <div class="material-btn">
+                        <a href="./index.html" class="material">home</a>
+                    </div>
+                    <p>Home</p>
+                </div>
+                <div id="collections-bottom" class="bottom-nav-container">
+                    <div class="material-btn">
+                        <a href="./collection.html" class="material">book_2</a>
+                    </div>
+                    <p>Collection</p>
+                </div>
+            </nav>
         </footer>
     </body>
 </html>
