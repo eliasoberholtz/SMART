@@ -5,8 +5,34 @@
 
 :root {
     /* COLOURS */
+    /*= Surfaces =*/
     --surface_dark: #171717;
     --surface_dark_variant: #1F1F1F;
+    --surface_light: #FFFFFF;
+    --surface_light_variant: #EDEDED;
+    
+    /*= Primary =*/
+    /*for important actions and elements needing the most emphasis*/
+    --primary: #246257;
+    --primary_container: #36C4AA; /* Fill colour for foreground elements like buttons */
+    --on_primary_container: #0D241F; /* Text or icons on top of its container */
+
+    /*= Secondary =*/
+    /*for elements that don’t need immediate attention and don’t need emphasis*/
+    --secondary: #245D7A;
+    --secondary_container: #6EB2D4;
+    --on_secondary_container: #0C1E27;
+
+    /*= Tertiary =*/
+    /*for smaller elements that need special emphasis but don't require immediate attention*/
+    --tertiary: #BE477B;
+    --tertiary_container: #EABDCE;
+    --on_tertiary_container: #571E38;
+
+    /*= Error =*/
+    --error: #840000;
+    --error_container: #FF8F8F;
+    --on_error_container: #3D0000;
 
     /* FONTS */
     --header_font: 'Noto Serif';
@@ -18,10 +44,47 @@
 .material {
     font-family: var(--material);
     text-decoration: none;
-    color: var(--surface_dark); /* CHANGE LATER */
 }
 
-/* WE WANT TO MAKE OUR APP FOR PHONES FIRST */
-@media (width <= 520px) {
-    /*Begin working here*/
+/* MOBILE STYLES */
+body {
+    background-color: var(--surface_dark);
+}
+
+h1 {
+    color: var(--surface_light);
+}
+
+nav#top-nav {
+    display: none;
+}
+nav#bottom-nav {
+    display: flex;
+    border-radius: 16px 16px 0 0;
+    background-color: var(--surface_dark_variant);
+}
+
+nav#bottom-nav .material-btn {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px;
+    border-radius: 16px;
+    background-color: var(--tertiary_container);
+    color: var(--on_tertiary_container);
+    font-size: 16px;
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 1024px) {
+    nav#top-nav { /* Show the top navigation bar */
+        display: block;
+    }
+
+    nav#bottom-nav { /* Hide the footer navigation bar */
+        display: none;
+    }
 }
