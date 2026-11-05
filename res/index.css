@@ -86,7 +86,7 @@ nav#bottom-nav {
     width: 100%;
 }
 
-nav#bottom-nav .material-btn {
+nav#bottom-nav .material-btn:link, nav#bottom-nav .material-btn:visited {
     display: flex;
     width: 40px;
     height: 40px;
@@ -101,11 +101,7 @@ nav#bottom-nav .material-btn {
 }
 
 nav#bottom-nav .material-btn:hover {
-    
-}
-
-nav#bottom-nav .material-btn:visited {
-    color: var(--on_tertiary_container);
+    opacity: 0.90;
 }
 
 nav#bottom-nav .bottom-nav-container {
