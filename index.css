@@ -51,7 +51,13 @@ body {
     background-color: var(--surface_dark);
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
+    font-family: var(--header_font);
+    color: var(--surface_light);
+}
+
+p, a {
+    font-family: var(--body_font);
     color: var(--surface_light);
 }
 
@@ -62,6 +68,11 @@ nav#bottom-nav {
     display: flex;
     border-radius: 16px 16px 0 0;
     background-color: var(--surface_dark_variant);
+    
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
 }
 
 nav#bottom-nav .material-btn {
@@ -80,8 +91,25 @@ nav#bottom-nav .material-btn {
 
 /* DESKTOP STYLES */
 @media (min-width: 1024px) {
+    header {
+        margin: auto;
+        text-align: center;
+    }
     nav#top-nav { /* Show the top navigation bar */
-        display: block;
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+        gap: 10px;
+        border-radius: 16px;
+        background-color: var(--surface_dark_variant);
+    }
+
+    nav#top-nav a {
+        border-radius: 16px;
+        padding: 16px;
+        background-color: var(--tertiary_container);
+        color: var(--on_tertiary_container);
+        text-decoration: none;
     }
 
     nav#bottom-nav { /* Hide the footer navigation bar */
