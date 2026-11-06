@@ -68,6 +68,7 @@ p {
 
 a {
     font-family: var(--body_font);
+    text-decoration: none;
 }
 
 nav#top-nav {
@@ -86,9 +87,10 @@ nav#bottom-nav {
     width: 100%;
 }
 
-nav#bottom-nav .material-btn, nav#bottom-nav .material-btn:visited {
+a.material-btn, a.material-btn:visited {
     display: flex;
-    width: 40px;
+    min-width: 40px;
+    width: auto;
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -100,7 +102,7 @@ nav#bottom-nav .material-btn, nav#bottom-nav .material-btn:visited {
     font-size: 16px;
 }
 
-nav#bottom-nav .material-btn:hover {
+a.material-btn:hover {
     opacity: 0.90;
 }
 
@@ -120,14 +122,6 @@ nav#bottom-nav .bottom-nav-container {
         gap: 10px;
         border-radius: 16px;
         background-color: var(--surface_dark_variant);
-    }
-
-    nav#top-nav a {
-        border-radius: 16px;
-        padding: 16px;
-        background-color: var(--tertiary_container);
-        color: var(--on_tertiary_container);
-        text-decoration: none;
     }
 
     nav#bottom-nav { /* Hide the footer navigation bar */
