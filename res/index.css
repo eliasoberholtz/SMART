@@ -51,7 +51,7 @@ header {
     text-align: center;
 }
 
-/* MOBILE STYLES */
+/* GENERAL STYLES */
 body {
     background-color: var(--surface_dark);
 }
@@ -71,6 +71,7 @@ a {
     text-decoration: none;
 }
 
+/* NAVIGATION */
 nav#top-nav {
     display: none;
 }
@@ -113,6 +114,29 @@ nav#bottom-nav .bottom-nav-container {
     font-size: 14px;
 }
 
+/* BOOK COLLECTIONS */
+.collection-grid {
+    background-color: var(--primary_container);
+    color: var(--on_primary_container);
+    border-radius: 16px;
+    padding: 16px;
+    max-width: 112px;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.author {
+    background-color: var(--primary);
+    color: var(--surface_light);
+    border-radius: 16px;
+    padding: 16px; 
+}
+
+.author-img {
+    border-radius: 16px;
+}
+
 /* DESKTOP STYLES */
 @media (min-width: 1024px) {
     nav#top-nav { /* Show the top navigation bar */
@@ -126,5 +150,9 @@ nav#bottom-nav .bottom-nav-container {
 
     nav#bottom-nav { /* Hide the footer navigation bar */
         display: none;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr;
     }
 }
