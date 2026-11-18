@@ -74,6 +74,7 @@ a {
 /* NAVIGATION */
 nav#top-nav {
     display: none;
+    margin: 16px;
 }
 nav#bottom-nav {
     display: flex;
@@ -120,21 +121,28 @@ nav#bottom-nav .bottom-nav-container {
     color: var(--on_primary_container);
     border-radius: 16px;
     padding: 16px;
-    max-width: 112px;
+    margin: 16px;
     
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
+    gap: 16px;
 }
 
 .author {
     background-color: var(--primary);
     color: var(--surface_light);
     border-radius: 16px;
-    padding: 16px; 
+    padding: 16px;
+}
+
+.author p {
+    justify-self: center;
 }
 
 .author-img {
     border-radius: 16px;
+    width: 100%;
+    justify-self: center;
 }
 
 /* DESKTOP STYLES */
@@ -152,7 +160,4 @@ nav#bottom-nav .bottom-nav-container {
         display: none;
     }
 
-    .collection-grid {
-        grid-template-columns: 1fr;
-    }
 }
