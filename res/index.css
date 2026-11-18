@@ -133,6 +133,7 @@ nav#bottom-nav .bottom-nav-container {
     color: var(--surface_light);
     border-radius: 16px;
     padding: 16px;
+    max-width: 332px;
 }
 
 .author p {
